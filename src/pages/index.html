@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="../style/output.css" />
+    <script src="../scripts/index.js"></script>
+    <script src="https://kit.fontawesome.com/e08720f43e.js" crossorigin="anonymous"></script>
+    
+</head>
+
+<body class="font-poppins">
+    <div class="flex justify-end py-3 px-5 space-x-2 bg-gray-50">
+        <ul class="flex list-none space-x-2 text-sm">
+            <a href="">Help</a>
+            <a href="">Contact</a>
+        </ul>
+    </div>
+
+    <nav class="flex items-center justify-between px-5 py-4">
+        <logo class="flex flex-row items-center text-xl pointer-events-none">
+            <h1 class="font-bold">Concurs</h1>
+            <p class="">Severin</p>
+        </logo>
+
+        <links class="hidden md:flex flex-row items-center space-x-6 list-none">
+            <a class="flex flex-col items-center group" href="./index.html">
+                <p class="text-black border-b-primary">Home</p>
+            </a>
+            <a class="" href="./news.html" id="newsLink">News</a>
+            <a class="" href="./shop.html" id="shopLink">Shop</a>
+            <a class="" href="./blog.html" id="blogLink">Blog</a>
+        </links>
+
+        <actions class="flex flex-row space-x-2 items-center">
+            <div class="hidden md:flex flex-row space-x-2 items-center">
+                <button> Sign Up </button>
+                <button> Login </button>
+            </div>
+            <button id="menuBtn" class="flex md:hidden hover:underline underline-offset-3">menu</button>
+        </actions>
+    </nav>
+    <!-- Navlinks for the menu for smaller devices -->
+    <navlinks
+        class="navlinks md:hidden fixed inset-0 justify-center items-center bg-gray-50 text-lg overflow-hidden hidden">
+        <links class="flex flex-col space-y-4">
+            <a class="" href="./index.html">Home</a>
+            <a class="" href="./news.html" id="newsLink">News</a>
+            <a class="" href="./shop.html" id="shopLink">Shop</a>
+            <a class="" href="./blog.html" id="blogLink">Blog</a>
+            <a class="" href="./blog.html" id="loginLink">Log in</a>
+        </links>
+
+        <button id="closeBtn" class="fixed top-0 right-0 p-16 pr-6 underline underline-offset-3">
+            close
+        </button>
+    </navlinks>
+
+
+
+</body>
+
+</html>
