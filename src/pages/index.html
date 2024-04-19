@@ -1,47 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- To make dark theme default in tailwind add the following class="dark" -->
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link rel="stylesheet" href="../style/output.css" />
+    <link rel="stylesheet" href="../style/input.css" />
     <script src="../scripts/index.js"></script>
     <script src="https://kit.fontawesome.com/e08720f43e.js" crossorigin="anonymous"></script>
-    
+
 </head>
 
-<body class="font-poppins">
-    <div class="flex justify-end py-3 px-5 space-x-2 bg-gray-50">
-        <ul class="flex list-none space-x-2 text-sm">
+<body class="font-poppins bg-background">
+    <section class="flex flex-col shadow-sm bg-primarygray">
+        <help class="flex items-center justify-end space-x-2 px-4 md:px-12 py-2 bg-[#282e30] text-sm text-alice">
             <a href="">Help</a>
             <a href="">Contact</a>
-        </ul>
-    </div>
+        </help>
+        <nav class="flex items-center justify-between px-4 md:px-12 py-6 bg-opacity-20">
+            <logo class="flex flex-row items-center text-xl pointer-events-none">
+                <h1 class="bg-gradient-to-r from-blue-300 to-accent text-transparent bg-clip-text font-bold text-2xl">
+                    Concurs
+                </h1>
+                <p class="text-alice text-2xl">Severin</p>
+            </logo>
 
-    <nav class="flex items-center justify-between px-5 py-4">
-        <logo class="flex flex-row items-center text-xl pointer-events-none">
-            <h1 class="font-bold">Concurs</h1>
-            <p class="">Severin</p>
-        </logo>
+            <links class="hidden md:flex flex-row items-center space-x-6 list-none text-alice">
+                <a class="flex flex-row items-center group space-x-1 " href="./index.html">
+                    <p class="  ">Home</p>
+                </a>
+                <a class="flex flex-row items-center group space-x-1" href="./news.html">
+                    <p class=" ">News</p>
+                    <i
+                        class="chevron-icon fas fa-chevron-down text-sm text-alice transition duration-300 transform group-hover:rotate-180"></i>
+                </a>
+                <a class="flex flex-row items-center group space-x-1" href="./shop.html">
+                    <p class=" ">Shop</p>
+                </a>
+                <a class="flex flex-row items-center group space-x-1" href="./blog.html">
+                    <p class=" ">Blog</p>
+                    <i
+                        class="chevron-icon fas fa-chevron-down text-sm text-alice transition duration-300 transform group-hover:rotate-180"></i>
+                </a>
+            </links>
 
-        <links class="hidden md:flex flex-row items-center space-x-6 list-none">
-            <a class="flex flex-col items-center group" href="./index.html">
-                <p class="text-black border-b-primary">Home</p>
-            </a>
-            <a class="" href="./news.html" id="newsLink">News</a>
-            <a class="" href="./shop.html" id="shopLink">Shop</a>
-            <a class="" href="./blog.html" id="blogLink">Blog</a>
-        </links>
+            <actions class="flex flex-row space-x-2 items-center text-alice">
+                <div class="hidden md:flex flex-row space-x-6 items-center">
+                    <button class="border-2 py-2 hover:font-bold px-5">Sign Up</button>
+                    <button>Login</button>
+                </div>
+                <button id="menuBtn" class="flex md:hidden hover:underline underline-offset-3">Menu</button>
+            </actions>
+        </nav>
 
-        <actions class="flex flex-row space-x-2 items-center">
-            <div class="hidden md:flex flex-row space-x-2 items-center">
-                <button> Sign Up </button>
-                <button> Login </button>
+        <container class="flex h-auto w-full bg-slate-500 bg-[url('../assets/sky.jpg')] object-cover">
+            <div class="h-screen w-1/2">
+                <description class="flex  h-full flex-col gap-y-4 px-12 py-10">
+                    <h1 class="text-alice text-4xl font-bold">ConcursSeverin your one-stop solution for all</h1>
+                    <p class="text-alice">Whether you're a tech enthusiast, a busy professional, or a casual user</p>
+                    <button class="text-alice bg-accent rounded-sm px-4 py-2 mr-auto mt-auto">Learn more</button>
+                </description>
             </div>
-            <button id="menuBtn" class="flex md:hidden hover:underline underline-offset-3">menu</button>
-        </actions>
-    </nav>
+            <div class="h-full w-1/2">
+                
+            </div>
+        </container>
+    </section>
+
     <!-- Navlinks for the menu for smaller devices -->
     <navlinks
         class="navlinks md:hidden fixed inset-0 justify-center items-center bg-gray-50 text-lg overflow-hidden hidden">
@@ -53,11 +80,10 @@
             <a class="" href="./blog.html" id="loginLink">Log in</a>
         </links>
 
-        <button id="closeBtn" class="fixed top-0 right-0 p-16 pr-6 underline underline-offset-3">
+        <button id="closeBtn" class="fixed top-0 right-0 p-16 pr-6 hover:underline underline-offset-3">
             close
         </button>
     </navlinks>
-
 
 
 </body>
