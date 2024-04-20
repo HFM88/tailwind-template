@@ -1,11 +1,36 @@
-
-
 /** @type {import('tailwindcss').Config} */
-const plugin = require('tailwindcss/plugin');
+
+const plugin = require("tailwindcss/plugin");
+const componentPlugin = require("./tailwind-plugins/componentPlugin");
+
+
+
+const buttonModuleExports = {
+  primary: {
+    base: "text-alice py-3 px-5 bg-accent rounded-sm",
+    hover: "bg-blue-600",
+  },
+  customHeading: {
+    base: "text-alice font-bold text-3xl bg-black mx-8 flex justify-center items-center",
+  },
+};
+
+const textModuleExports = {
+  customHeading: {
+    base: "text-alice font-bold text-3xl bg-blue-300 mx-8 flex justify-center items-center",
+  },
+};
+
+const modules = {
+  button: buttonModuleExports,
+  text: textModuleExports,
+};
 
 
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: [
+    "./src/**/*.{html,js}",
+  ],
   theme: {
     extend: {
       fontFamily: {
@@ -34,5 +59,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    componentPlugin,
+  ],
 };

@@ -610,20 +610,12 @@ video {
   margin-right: auto;
 }
 
-.mt-6{
-  margin-top: 1.5rem;
-}
-
-.mt-3{
-  margin-top: 0.75rem;
+.mt-10{
+  margin-top: 2.5rem;
 }
 
 .mt-8{
   margin-top: 2rem;
-}
-
-.mt-10{
-  margin-top: 2.5rem;
 }
 
 .flex{
@@ -708,12 +700,6 @@ video {
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
-.space-y-2 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
-}
-
 .overflow-hidden{
   overflow: hidden;
 }
@@ -726,11 +712,6 @@ video {
   border-width: 2px;
 }
 
-.bg-\[\#282e30\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(40 46 48 / var(--tw-bg-opacity));
-}
-
 .bg-accent{
   --tw-bg-opacity: 1;
   background-color: rgb(64 92 245 / var(--tw-bg-opacity));
@@ -741,8 +722,9 @@ video {
   background-color: rgb(20 20 20 / var(--tw-bg-opacity));
 }
 
-.bg-transparent{
-  background-color: transparent;
+.bg-primaryblack{
+  --tw-bg-opacity: 1;
+  background-color: rgb(27 27 27 / var(--tw-bg-opacity));
 }
 
 .bg-secondaryblack{
@@ -750,13 +732,8 @@ video {
   background-color: rgb(33 33 33 / var(--tw-bg-opacity));
 }
 
-.bg-primaryblack{
-  --tw-bg-opacity: 1;
-  background-color: rgb(27 27 27 / var(--tw-bg-opacity));
-}
-
-.bg-opacity-20{
-  --tw-bg-opacity: 0.2;
+.bg-transparent{
+  background-color: transparent;
 }
 
 .bg-\[url\(\'\.\.\/assets\/sky\.jpg\'\)\]{
@@ -821,8 +798,8 @@ video {
   padding-bottom: 1.5rem;
 }
 
-.pr-6{
-  padding-right: 1.5rem;
+.pr-4{
+  padding-right: 1rem;
 }
 
 .font-poppins{
@@ -872,9 +849,9 @@ video {
   color: transparent;
 }
 
-.shadow-sm{
-  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+.shadow-md{
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -943,4 +920,3 @@ video {
     line-height: 2.5rem;
   }
 }
-
