@@ -2,7 +2,13 @@
     ".nav-link": {   
         "@apply flex flex-row items-center space-x-1" : {} 
     },
-    ".icon-rotate": {   
-        "@apply group-hover:rotate-180 transform transition duration-300" : {} 
+    ".icon-rotate-180": {   
+        "@apply group-hover:rotate-180 transform transition duration-200" : {} 
+    },
+    ".underline-hover": {
+        "@apply group-hover:underline group-hover:underline-offset-2 transition-all duration-200" : {}
+    },
+    ".button-nav": {
+        "@apply py-2 px-4 border-2 rounded-sm border-text text-text hover:bg-text hover:text-background transition-colors duration-500" : {} 
     }
 }

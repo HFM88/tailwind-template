@@ -1,24 +1,20 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./views/**/*.ejs",
-  ],
+  content: ["./views/**/*.ejs"],
   theme: {
     extend: {
       fontFamily: {
-        "shadows-light": ["Shadows Into Light", "cursive"],
-        baloo: ["Baloo-2", "cursive"],
-        roboto: ["Roboto", "cursive"],
         poppins: ["Poppins", "sans-serif"],
+        arial7: ["Arial7", "sanse-serif"],
+        modern: ["Modern", "sanse-serif"],
       },
       colors: {
-        primaryblack: "#1b1b1b",
-        secondaryblack: "#212121",
-        accent: "#405cf5",
-        background: "#141414",
+        text: "#181411",
+        background: "#fbf9f9",
+        primary: "#65452f",
+        secondary: "#d4a687",
+        accent: "#c46f36",
         alice: "#f0f8ff",
-        secondary: "#222224",
-        text: "",
         subtext: "#DEE2E6",
         button: "",
       },
@@ -31,7 +27,5 @@ module.exports = {
       },
     },
   },
-  plugins: [
-    require("./tw-plugins/component-loader/index.js")
-  ],
+  plugins: [require("./tw-plugins/component-loader/index.js")],
 };

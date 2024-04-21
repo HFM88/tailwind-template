@@ -1,0 +1,52 @@
+<nav class="flex items-center justify-between px-4 py-4 md:px-8 md:py-5 border-b">
+    <links class="md:flex items-center space-x-4 text-text hidden">
+        <a href="" class="flex items-center space-x-1">
+            <p>Home</p>
+        </a>
+        <a href="" class="flex items-center space-x-1 group">
+            <p>Blog</p>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6 icon-rotate-180">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+            </svg>
+
+        </a>
+        <a href="" class="flex items-center space-x-1 group">
+            <p>News</p>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6 icon-rotate-180">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+            </svg>
+        </a>
+    </links>
+    <%- include('../logo.ejs') %>
+        <buttons class="flex items-center space-x-2">
+            <button class="button-nav py-1 hidden sm:block border-dashed">
+                Log in
+            </button>
+            <button class="button-nav py-1 hidden sm:block">
+                Sign up
+            </button>
+            <button class="block md:hidden" id="menuBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-7 h-7 md:w-8 md:h-8">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </buttons>
+</nav>
+
+<subnav class="flex justify-between items-center text-text bg-secondary px-4 py-1 md:px-8 italic text-sm group pointer-events-none select-none shadow-lg">
+    <p class="underline-hover">Start here!</p>
+    <p class="underline-hover hidden md:block">Welcome to ConcursSeverin, your premier destination for cutting-edge IT solution tailored
+        to meet your business needs.</p>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor"
+        class="w-5 h-5">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+    </svg>
+</subnav>
+
+<%- include('navbarMobile.ejs') %>
+
+<script src="../../dist/scripts/index.js"></script>
