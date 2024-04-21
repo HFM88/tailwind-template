@@ -1,0 +1,8 @@
+{
+    ".nav-link": {   
+        "@apply flex flex-row items-center space-x-1 group" : {} 
+    },
+    ".icon-rotate": {   
+        "@apply group-hover:rotate-180 transform transition duration-300" : {} 
+    }
+}
