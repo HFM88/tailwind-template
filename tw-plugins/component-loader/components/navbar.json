@@ -1,6 +1,6 @@
 {
     ".nav-link": {   
-        "@apply flex flex-row items-center space-x-1 group" : {} 
+        "@apply flex flex-row items-center space-x-1" : {} 
     },
     ".icon-rotate": {   
         "@apply group-hover:rotate-180 transform transition duration-300" : {} 
