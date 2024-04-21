@@ -684,8 +684,28 @@ video {
   border-width: 2px;
 }
 
+.bg-accent{
+  --tw-bg-opacity: 1;
+  background-color: rgb(64 92 245 / var(--tw-bg-opacity));
+}
+
+.bg-primaryblack{
+  --tw-bg-opacity: 1;
+  background-color: rgb(27 27 27 / var(--tw-bg-opacity));
+}
+
+.bg-secondaryblack{
+  --tw-bg-opacity: 1;
+  background-color: rgb(33 33 33 / var(--tw-bg-opacity));
+}
+
 .bg-transparent{
   background-color: transparent;
+}
+
+.bg-background{
+  --tw-bg-opacity: 1;
+  background-color: rgb(20 20 20 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\.\.\/assets\/sky\.jpg\'\)\]{
@@ -700,6 +720,10 @@ video {
   --tw-gradient-from: #93c5fd var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(147 197 253 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-accent{
+  --tw-gradient-to: #405cf5 var(--tw-gradient-to-position);
 }
 
 .bg-clip-text{
@@ -742,6 +766,10 @@ video {
   padding-bottom: 1.5rem;
 }
 
+.font-poppins{
+  font-family: Poppins, sans-serif;
+}
+
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
@@ -766,9 +794,14 @@ video {
   font-weight: 700;
 }
 
+.text-alice{
+  --tw-text-opacity: 1;
+  color: rgb(240 248 255 / var(--tw-text-opacity));
+}
+
 .text-subtext{
   --tw-text-opacity: 1;
-  color: rgb(52 58 64 / var(--tw-text-opacity));
+  color: rgb(222 226 230 / var(--tw-text-opacity));
 }
 
 .text-transparent{
